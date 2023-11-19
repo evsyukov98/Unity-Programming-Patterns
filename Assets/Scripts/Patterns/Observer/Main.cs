@@ -9,7 +9,7 @@ namespace Patterns.Observer
     /// (также можно просто использовать встроенные C# ивенты)
     /// Внимение! - Подписчики оповещаются в случайном порядке.
     /// </summary>
-    public class ObserverMain : MonoBehaviour
+    public class Main : MonoBehaviour
     {
         [SerializeField] private List<EnemyObserver> observers;
         [SerializeField] private PlayerSubject subject;
