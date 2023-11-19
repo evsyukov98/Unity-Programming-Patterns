@@ -2,21 +2,14 @@ using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 
-namespace Observer
+namespace Patterns.Observer
 {
     public class PlayerSubject : MonoBehaviour, ISubject
     {
         private List<IObserver> observers = new List<IObserver>();
     
-        public void Subscribe(IObserver observer)
-        {
-            observers.Add(observer);
-        }
-
-        public void Unsubscribe(IObserver observer)
-        {
-            observers.Remove(observer);
-        }
+        public void Subscribe(IObserver observer) => observers.Add(observer);
+        public void Unsubscribe(IObserver observer) => observers.Remove(observer);
 
         public void NotifyObservers()
         {

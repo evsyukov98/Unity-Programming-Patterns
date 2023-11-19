@@ -1,8 +1,7 @@
-using UnityEngine;
 using DG.Tweening;
+using UnityEngine;
 
-
-namespace Observer
+namespace Patterns.Observer
 {
     public class EnemyObserver : MonoBehaviour , IObserver
     {

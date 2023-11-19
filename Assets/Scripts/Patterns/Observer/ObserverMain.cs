@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Observer
+namespace Patterns.Observer
 {
     /// <summary>
     /// Паттерн для уведомления подписчиков.
@@ -9,7 +9,7 @@ namespace Observer
     /// (также можно просто использовать встроенные C# ивенты)
     /// Внимение! - Подписчики оповещаются в случайном порядке.
     /// </summary>
-    public class ObserverPattern : MonoBehaviour
+    public class ObserverMain : MonoBehaviour
     {
         [SerializeField] private List<EnemyObserver> observers;
         [SerializeField] private PlayerSubject subject;

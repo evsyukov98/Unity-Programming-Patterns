@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-namespace Observer
+﻿namespace Patterns.Observer
 {
     public interface IObserver
     {
